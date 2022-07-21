@@ -3,23 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-boot-enterprise-build</artifactId>
-        <groupId>com.enterprise</groupId>
+        <artifactId>spring-boot-gleason-build</artifactId>
+        <groupId>tech.gleason</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-boot-enterprise-project</artifactId>
+    <artifactId>spring-boot-gleason-project</artifactId>
     <packaging>pom</packaging>
-    <name>Spring Boot Enterprise Project</name>
-    <description>Spring Boot Enterprise Project</description>
+    <name>Spring Boot Gleason Project</name>
+    <description>Spring Boot Gleason Project</description>
     <properties>
         <main.basedir>${basedir}/..</main.basedir>
     </properties>
     <modules>
-        <module>spring-boot-enterprise-dependencies</module>
-        <module>spring-boot-enterprise-parent</module>
-        <module>spring-boot-enterprise</module>
-        <module>spring-boot-enterprise-starters</module>
+        <module>spring-boot-gleason-dependencies</module>
+        <module>spring-boot-gleason-parent</module>
+        <module>spring-boot-gleason</module>
+        <module>spring-boot-gleason-starters</module>
     </modules>
     <build>
         <plugins>

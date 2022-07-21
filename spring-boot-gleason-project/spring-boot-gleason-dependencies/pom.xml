@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>spring-boot-enterprise-project</artifactId>
-        <groupId>com.enterprise</groupId>
+        <artifactId>spring-boot-gleason-project</artifactId>
+        <groupId>tech.gleason</groupId>
         <version>${revision}</version>
     </parent>
-    <artifactId>spring-boot-enterprise-dependencies</artifactId>
+    <artifactId>spring-boot-gleason-dependencies</artifactId>
     <packaging>pom</packaging>
-    <name>Spring Boot Enterprise Dependencies</name>
-    <description>Spring Boot Enterprise Dependencies</description>
+    <name>Spring Boot Gleason Dependencies</name>
+    <description>Spring Boot Gleason Dependencies</description>
     <url>https://gleason.tech</url>
     <licenses>
         <license>
@@ -20,7 +20,7 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/gleasonsean/spring-boot-enterprise</url>
+        <url>https://github.com/Gleason-Tech/spring-boot-gleason</url>
     </scm>
     <developers>
         <developer>
@@ -39,6 +39,7 @@
         <jib-maven-plugin.version>3.2.1</jib-maven-plugin.version>
         <karate.version>1.2.0.RC6</karate.version>
         <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
+        <classgraph.version>4.8.108</classgraph.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -50,15 +51,20 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- Spring Boot Enterprise -->
+            <!-- Spring Boot Gleason -->
             <dependency>
-                <groupId>com.enterprise</groupId>
-                <artifactId>spring-boot-enterprise</artifactId>
+                <groupId>tech.gleason</groupId>
+                <artifactId>spring-boot-gleason</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>com.enterprise</groupId>
-                <artifactId>spring-boot-enterprise-autoconfigure</artifactId>
+                <groupId>tech.gleason</groupId>
+                <artifactId>spring-boot-gleason-starter</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>tech.gleason</groupId>
+                <artifactId>spring-boot-gleason-autoconfigure</artifactId>
                 <version>${revision}</version>
             </dependency>
             <!-- Third Party -->
@@ -82,6 +88,11 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-hateoas</artifactId>
                 <version>${springdoc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.classgraph</groupId>
+                <artifactId>classgraph</artifactId>
+                <version>${classgraph.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

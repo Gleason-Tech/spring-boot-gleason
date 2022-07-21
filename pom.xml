@@ -9,12 +9,12 @@
         <version>2.7.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.enterprise</groupId>
-    <artifactId>spring-boot-enterprise-build</artifactId>
+    <groupId>tech.gleason</groupId>
+    <artifactId>spring-boot-gleason-build</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
-    <name>Spring Boot Enterprise Build</name>
-    <description>Spring Boot Enterprise Build</description>
+    <name>Spring Boot Gleason Build</name>
+    <description>Spring Boot Gleason Build</description>
     <properties>
         <spring.boot.version>2.7.1</spring.boot.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
@@ -23,7 +23,7 @@
         <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
     </properties>
     <modules>
-        <module>spring-boot-enterprise-project</module>
+        <module>spring-boot-gleason-project</module>
     </modules>
     <distributionManagement>
         <snapshotRepository>

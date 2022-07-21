@@ -4,24 +4,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>spring-boot-enterprise-dependencies</artifactId>
-        <groupId>com.enterprise</groupId>
+        <artifactId>spring-boot-gleason-dependencies</artifactId>
+        <groupId>tech.gleason</groupId>
         <version>${revision}</version>
-        <relativePath>../spring-boot-enterprise-dependencies</relativePath>
+        <relativePath>../spring-boot-gleason-dependencies</relativePath>
     </parent>
-    <artifactId>spring-boot-enterprise-parent</artifactId>
+    <artifactId>spring-boot-gleason-parent</artifactId>
     <packaging>pom</packaging>
-    <name>Spring Boot Enterprise Parent</name>
-    <description>Spring Boot Enterprise Parent</description>
+    <name>Spring Boot Gleason Parent</name>
+    <description>Spring Boot Gleason Parent</description>
     <modules>
-        <module>../spring-boot-enterprise-autoconfigure</module>
+        <module>../spring-boot-gleason-autoconfigure</module>
     </modules>
     <properties>
         <main.basedir>${basedir}/../..</main.basedir>
         <java.version>1.8</java.version>
-        <git.url>https://github.com/gleasonsean/spring-boot-enterprise</git.url>
-        <git.connection>scm:git:git://github.com/gleasonsean/spring-boot-enterprise.git</git.connection>
-        <git.developerConnection>scm:git:ssh://git@github.com/gleasonsean/spring-boot-enterprise.git</git.developerConnection>
+        <git.url>https://github.com/Gleason-Tech/spring-boot-gleason</git.url>
+        <git.connection>scm:git:git://github.com/Gleason-Tech/spring-boot-gleason.git</git.connection>
+        <git.developerConnection>scm:git:ssh://git@github.com/Gleason-Tech/spring-boot-gleason.git</git.developerConnection>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <duplicate-finder-maven-plugin.version>1.5.1</duplicate-finder-maven-plugin.version>
@@ -31,12 +31,6 @@
 		<connection>${git.connection}</connection>
 		<developerConnection>${git.developerConnection}</developerConnection>
 	</scm>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
-    </dependencies>
     <build>
         <pluginManagement>
             <plugins>

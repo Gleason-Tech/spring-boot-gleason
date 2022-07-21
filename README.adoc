@@ -1,21 +1,20 @@
-= Spring Boot Enterprise
+= Spring Boot Gleason
 :Spring-docs: https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference
-:github: https://github.com/gleasonsean/spring-boot-enterprise
+:github: https://github.com/Gleason-Tech/spring-boot-gleason
 
-Spring Boot Enterprise helps you to build internal Spring Boot libraries at any company with absolute minimum fuss.
+Spring Boot Gleason helps you to build internal Spring Boot libraries at Gleason.Tech with absolute minimum fuss.
 It takes an opinionated way of building internal libraries on the Spring platform so that new and existing users can quickly get up and running.
 
 == Installation and Getting Started
-Simply fork this repository and replace 'enterprise' with your company name.
 
-Then include the `spring-boot-enterprise-starter-parent` as your parent pom:
+Then include the `spring-boot-gleason-starter-parent` as your parent pom:
 
 [source,xml,indent=0]
 ----
 <!-- Inherit defaults from Spring Boot -->
 <parent>
-    <groupId>com.enterprise</groupId>
-    <artifactId>spring-boot-enterprise-starter-parent</artifactId>
+    <groupId>tech.gleason</groupId>
+    <artifactId>spring-boot-gleason-starter-parent</artifactId>
     <version>${LATEST}</version>
 </parent>
 ----
@@ -24,26 +23,26 @@ The Spring Boot {Spring-docs}/html/[reference documentation] includes detailed {
 
 == Modules
 
-There are several modules in Spring Boot Enterprise.
+There are several modules in Spring Boot Gleason.
 Here is a quick overview:
 
-=== spring-boot-enterprise
+=== spring-boot-gleason
 
-The main library providing features that support the other parts of Spring Boot Enterprise.
+The main library providing features that support the other parts of Spring Boot Gleason.
 
-=== spring-boot--enterprise-autoconfigure
+=== spring-boot--gleason-autoconfigure
 
-Spring Boot Enterprise can configure large parts of typical applications based on the content of their classpath.
+Spring Boot Gleason can configure large parts of typical applications based on the content of their classpath.
 Since it uses Spring Boot underneath the covers, a single `@EnableAutoConfiguration` annotation triggers auto-configuration of the Spring context.
 
 Auto-configuration attempts to deduce which beans a user might need.
 Auto-configuration will always back away as the user starts to define their own beans.
 
-=== spring-boot-enterprise-starters
+=== spring-boot-gleason-starters
 
 Starters are a set of convenient dependency descriptors that you can include in your application.
 You get a one-stop shop for all the Spring and related technology you need without having to hunt through sample code and copy-paste loads of dependency descriptors.
 
 == License
 
-Spring Boot Enterprise is Open Source software released under the https://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
+Spring Boot Gleason is Open Source software released under the https://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].

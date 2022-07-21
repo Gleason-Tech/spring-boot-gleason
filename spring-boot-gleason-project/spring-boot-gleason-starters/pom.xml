@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>spring-boot-enterprise-parent</artifactId>
-        <groupId>com.enterprise</groupId>
+        <artifactId>spring-boot-gleason-parent</artifactId>
+        <groupId>tech.gleason</groupId>
         <version>${revision}</version>
-        <relativePath>../spring-boot-enterprise-parent</relativePath>
+        <relativePath>../spring-boot-gleason-parent</relativePath>
     </parent>
-    <artifactId>spring-boot-enterprise-starters</artifactId>
-    <name>Spring Boot Enterprise Starters</name>
-    <description>Spring Boot Enterprise Starters</description>
+    <artifactId>spring-boot-gleason-starters</artifactId>
+    <name>Spring Boot Gleason Starters</name>
+    <description>Spring Boot Gleason Starters</description>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-enterprise-starter-parent</module>
-        <module>spring-boot-enterprise-starter</module>
+        <module>spring-boot-gleason-starter-parent</module>
+        <module>spring-boot-gleason-starter</module>
     </modules>
     <properties>
         <main.basedir>${basedir}/../..</main.basedir>
