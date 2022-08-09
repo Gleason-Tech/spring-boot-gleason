@@ -67,6 +67,11 @@
                 <artifactId>spring-boot-gleason-autoconfigure</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <dependency>
+                <groupId>tech.gleason</groupId>
+                <artifactId>spring-boot-gleason-starter-web-documentation</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <!-- Third Party -->
             <dependency>
                 <groupId>com.intuit.karate</groupId>

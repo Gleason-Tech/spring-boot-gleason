@@ -16,6 +16,7 @@
     <modules>
         <module>spring-boot-gleason-starter-parent</module>
         <module>spring-boot-gleason-starter</module>
+        <module>spring-boot-gleason-starter-web-documentation</module>
     </modules>
     <properties>
         <main.basedir>${basedir}/../..</main.basedir>
